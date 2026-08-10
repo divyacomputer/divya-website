@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
-  branch: main # Yadi GitHub repo main ho bhane main, natra master
+  branch: main
 
-media_folder: "images" # Upload gareko photo basne folder
+media_folder: "images"
 public_folder: "/images"
 
 collections:
@@ -12,7 +12,7 @@ collections:
       - file: "index.html"
         label: "Home Page"
         name: "index"
-fields:
+        fields:
           - { label: "Site Title", name: "title", widget: "string" }
           - { label: "Welcome Text", name: "welcome_message", widget: "text" }
           - { label: "Services Title", name: "services_title", widget: "string" }
@@ -22,5 +22,5 @@ fields:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
- - { label: "Contact Phone", name: "phone", widget: "string" }
- - { label: "Contact Email", name: "email", widget: "string" }
+          - { label: "Contact Phone", name: "phone", widget: "string" }
+          - { label: "Contact Email", name: "email", widget: "string" }
